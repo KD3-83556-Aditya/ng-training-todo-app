@@ -1,0 +1,37 @@
+.task-card{
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.task-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;;
+}
+.task-title{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.task-action button{
+    border: none;
+    padding: 8px 12px;
+    margin-left: 8px;
+    border-radius: 4px;
+    background-color: orange;
+} 
+.todo-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.todo-table th, .todo-table td{
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+.todo-table th{
+    background-color: #f0f0f0;
+}

@@ -1,9 +1,10 @@
 import React from 'react';
+import './TodoList.css';
 const todos = [
     {user: 'User 1', status: 'Completed', due:'13/10/2025', priority:'Low', Comment:'task complete' },
-    {user: 'User 2', status: 'Completed', due:'13/10/2025', priority:'Low', Comment:'task complete' },
-    {user: 'User 3', status: 'Completed', due:'13/10/2025', priority:'Low', Comment:'task complete' },
-    {user: 'User 4', status: 'Completed', due:'13/10/2025', priority:'Low', Comment:'task complete' }
+    {user: 'User 2', status: 'In Progress', due:'1/09/2025', priority:'High', Comment:'task complete' },
+    {user: 'User 3', status: 'Not Started', due:'13/12/2025', priority:'Low', Comment:'task complete' },
+    {user: 'User 4', status: 'Completed', due:'11/10/2025', priority:'Normal', Comment:'task complete' }
 ]
 const TodoList = () =>{
     return(
@@ -13,8 +14,8 @@ const TodoList = () =>{
                     Tasks
                 </div>
                 <div className='task-action'>
-                    <div>New Task</div>
-                    <div>Refresh</div>
+                    <button>New Task</button>
+                    <button>Refresh</button>
                 </div>
             </div>
             <table className='todo-table'>
